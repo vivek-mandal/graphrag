@@ -1,0 +1,140 @@
+[
+  {
+    "question": "what is msci client risks?",
+    "filter": null,
+    "runs": [
+      {
+        "mode": "vector_topk",
+        "context_len": 9338,
+        "context_note": "k=5",
+        "retrieval_meta": {
+          "hits": [
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Item 1A - Risk Factors",
+              "chunk_index": 61,
+              "page_number": 18,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm"
+            },
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Preamble",
+              "chunk_index": 12,
+              "page_number": 3,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm"
+            },
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Item 1A - Risk Factors",
+              "chunk_index": 60,
+              "page_number": 18,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm"
+            },
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Item 1A - Risk Factors",
+              "chunk_index": 63,
+              "page_number": 19,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm"
+            },
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Item 1A - Risk Factors",
+              "chunk_index": 64,
+              "page_number": 19,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm"
+            }
+          ]
+        },
+        "context_relevance": 10.0,
+        "answer_quality": 10.0,
+        "brief_reason": "The answer accurately summarizes and grounds itself in the context, specifically citing the client risks described in the filing.",
+        "answer": "MSCI faces client risks including the possibility that clients who pay variable license fees—such as those based on assets under management, total expense ratio, or trading volumes of indexed investment products—may seek to negotiate lower fee structures, reduce the total expense ratio of their products, or stop using MSCI indexes altogether. These actions could limit the growth of or decrease MSCI's revenues from asset-based or other variable fees, potentially having a material adverse effect on MSCI's business, financial condition, or results of operations (filing=10-K period=FY2025 page=19 chunk=64 source_url=https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm)."
+      },
+      {
+        "mode": "graph_window",
+        "context_len": 5670,
+        "context_note": "vector top-1 + NEXT window (hops=1)",
+        "retrieval_meta": {
+          "anchor": {
+            "filing_type": "10-K",
+            "period": "FY2025",
+            "section": "Item 1A - Risk Factors",
+            "chunk_index": 61,
+            "page_number": 18,
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm",
+            "window_note": "window +/-1 around chunk_index=61"
+          }
+        },
+        "context_relevance": 10.0,
+        "answer_quality": 9.0,
+        "brief_reason": "The answer accurately summarizes client risks described in the context, but could mention more specific risk factors listed in the center chunk.",
+        "answer": "MSCI faces several client-related risks, including contractual disputes that may result in credits, monetary judgments, penalties, or damages, even if the outcome is ultimately favorable to MSCI (filing=10-K period=FY2025 page=18 chunk_index=60 source_url='https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm'). Clients increasingly require assurances regarding MSCI's IT and operational risk management, and many are subject to regulations requiring oversight of third-party relationships (filing=10-K period=FY2025 page=18 chunk_index=60 source_url='https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm'). Reputational damage could prompt clients to reduce use of MSCI products or terminate or renegotiate contracts, which could materially affect MSCI’s business, financial condition, or results of operations (filing=10-K period=FY2025 page=18 chunk_index=61 source_url='https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm')."
+      },
+      {
+        "mode": "hybrid_topk_windows",
+        "context_len": 26854,
+        "context_note": "windows=5 (dedup from k=5)",
+        "retrieval_meta": {
+          "note": "windows=5 (dedup from k=5)",
+          "windows": [
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Item 1A - Risk Factors",
+              "chunk_index": 61,
+              "page_number": 18,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm",
+              "window_note": "window +/-1 around chunk_index=61"
+            },
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Preamble",
+              "chunk_index": 12,
+              "page_number": 3,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm",
+              "window_note": "window +/-1 around chunk_index=12"
+            },
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Item 1A - Risk Factors",
+              "chunk_index": 60,
+              "page_number": 18,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm",
+              "window_note": "window +/-1 around chunk_index=60"
+            },
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Item 1A - Risk Factors",
+              "chunk_index": 63,
+              "page_number": 19,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm",
+              "window_note": "window +/-1 around chunk_index=63"
+            },
+            {
+              "filing_type": "10-K",
+              "period": "FY2025",
+              "section": "Item 1A - Risk Factors",
+              "chunk_index": 64,
+              "page_number": 19,
+              "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm",
+              "window_note": "window +/-1 around chunk_index=64"
+            }
+          ]
+        },
+        "context_relevance": 7.0,
+        "answer_quality": 7.0,
+        "brief_reason": "The answer is relevant and partially grounded in the context, but focuses on fee-related risks not directly covered in the provided excerpts, which emphasize reputational, contractual, and operational risks.",
+        "answer": "MSCI faces client risks including the possibility that clients who pay variable license fees (such as those based on assets under management, total expense ratio, or trading volumes) may seek to negotiate lower fee structures, reduce the total expense ratio of their products, or cease using MSCI indexes, which could limit revenue growth or decrease revenues from asset-based or other variable fees (filing=10-K period=FY2025 page=19 chunk=64 source_url='https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm'). Additionally, intense competition among clients offering indexed investment products may drive fee reductions, and MSCI's largest clients may renegotiate asset-based fee models to achieve lower fees, negatively impacting operating revenues (filing=10-K period=FY2025 page=19 chunk=65 source_url='https://www.sec.gov/Archives/edgar/data/1408198/000140819826000011/msci-20251231.htm')."
+      }
+    ]
+  }
+]
